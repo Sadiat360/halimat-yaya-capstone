@@ -91,8 +91,82 @@ Describe your data and the relationships between the data points. You can show t
 
 ### Endpoints
 
-List endpoints that your server will implement, including HTTP methods, parameters, and example responses.
+**GET / bestSellers**
 
+Response:
+```
+[
+    {
+        "id": 1,
+        "name": "Lips high shimmer",
+        "image": "/image",
+        "price": "$50",
+        "rating": 4.5,
+        "description": "bold lips",
+        "details": "Warning: Intense Hydration Ahead. Lasting Glow. GlowBoost Vitamin C Serum with Hyaluronic Acid and Antioxidants delivers a powerful burst of hydration and radiance instantly and over time. This glow-enhancing serum is available in 5 radiant variants, like Sunlit Glow, Brightening Boost, Dewy Dream, Golden Radiance, and Fresh Awakening. Prepare for visibly brighter, smoother, and more luminous skin every day.",
+        "slug": "model-one-image"
+    },
+    ...
+]
+```
+**GET / bestSellers/:id**
+
+ Get bestSellers by id, users can read product reviews even if the user is logged in or not
+
+
+Response:
+```
+[
+    {
+        "id": "3r7q32sd4d8821g3442",
+        "name": "Lips high shimmer",
+        "image": "/image",
+        "price": "$50",
+        "rating": 4.5,
+        "description": "bold lips",
+        "details": "Warning: Intense Hydration Ahead. Lasting Glow. GlowBoost Vitamin C Serum with Hyaluronic Acid and Antioxidants delivers a powerful burst of hydration and radiance instantly and over time. This glow-enhancing serum is available in 5 radiant variants, like Sunlit Glow, Brightening Boost, Dewy Dream, Golden Radiance, and Fresh Awakening. Prepare for visibly brighter, smoother, and more luminous skin every day.",
+        "slug": "model-one-image",
+
+        "reviews":[
+          {
+            "id": "34a7sd93k248s8f212752",
+            "reviewerName": "Jane Doe",
+            "ratings": "4",
+            "title": "Great Product",
+            "reviewText": "I’m obsessed! The color match is spot on, and it gives me such a natural glow.",
+            "image": "/image",
+            "timestamp": 123456789046865
+          }
+          {
+            "id": "84a7sd33k148s8f215192",
+            "reviewerName": "Jackie wolf",
+            "ratings": "4.5",
+            "title": "I love it",
+            "reviewText": "This product is incredible! The coverage is flawless, and it feels so lightweight on my skin",
+            "timestamp": 123456789046865
+          }
+        ]
+    },
+    ...
+]
+```
+
+**POST / bestSellers/:id/rating**
+
+- Logged in user can add their rating of a product
+
+```
+[
+    {
+        "id": "84a7sd33k148s8f215192",
+        "reviewerName": "Jackie wolf",
+        "ratings": "4",
+        "title": "I love it",
+        "reviewText": "This product is incredible! The coverage is flawless, and it feels so lightweight on my skin",
+        "timestamp": 123456789046865
+    },
+    ...
+]
 ## Roadmap
 
 Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation working back from the capstone due date. 
