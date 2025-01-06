@@ -86,6 +86,12 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 
 ### Mockups
 
+### SignUp Page
+![](SignUp.png)
+
+### SignIn Page
+![](SignIn.png)
+
 ### Home Page
 ![](HomePage-insp.png)
 
@@ -171,6 +177,44 @@ Response:
 
 ---
 
+**POST /users/signUp**
+
+- Add a user account
+
+Parameters:
+- name: User's name
+- email: User's email
+- password: User's provided password
+
+Response:
+````
+[
+  {
+    "token": "SAMPLE_signUp_jwt_token_here"
+  },
+]
+
+````
+**POST /users/SignIn**
+
+- SignIn a user account
+
+Parameters:
+
+- email: User's email
+- password: User's provided password
+
+Response:
+````
+[
+  {
+    "token": "SAMPLE_signUp_jwt_token_here"
+  },
+]
+
+````
+
+
 ### Roadmap
 
 - Create client
@@ -179,6 +223,8 @@ Response:
 
 - Create server
   - express project with routing, with placeholder 200 responses
+
+- Create migrations
 
 - Create endpoints for qoutes
 
