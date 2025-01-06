@@ -75,7 +75,7 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 ---
 
 ### Sitemap
-![](SiteMap.png)
+![](mockups/SiteMap.png)
 
 - Register/LogIn
 - Homepage
@@ -87,25 +87,25 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 ### Mockups
 
 ### SignUp Page
-![](SignUp.png)
+![](mockups/SignUp.png)
 
 ### SignIn Page
-![](SignIn.png)
+![](mockups/SignIn.png)
 
 ### Home Page
-![](HomePage-insp.png)
+![](mockups/HomePage-insp.png)
 
 ### TemplateDetails Page
-![](TemplatesDetails.png)
+![](mockups/TemplatesDetails.png)
 
 ### Curate Template Page
-![](Curate-Template.png)
+![](mockups/Curate-Template.png)
 
 ### Card design Page
-![](CardDesign.png)
+![](mockups/CardDesign.png)
 
 ### Video Page
-![](VideoPage.png)
+![](mockups/VideoPage.png)
 
 
 
