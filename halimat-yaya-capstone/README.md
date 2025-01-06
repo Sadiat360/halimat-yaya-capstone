@@ -58,6 +58,8 @@ The app solves this by making it easy to create personalized, meaningful, and sh
     - react-router
     - axios
     - Twilio
+    - jspdf
+    -react-youtube
 
 - Server Libraries:
     - express
@@ -73,11 +75,14 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 ---
 
 ### Sitemap
+![](SiteMap.png)
+
 - Register/LogIn
 - Homepage
-- choose the "supportee's mood
-- Template
+- choose the "supportee's mood/template
+- TemplateDetails
 - Card/Download
+- Video Call
 
 ### Mockups
 
@@ -89,6 +94,9 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 
 ### Curate Template Page
 ![](Curate-Template.png)
+
+### Card design Page
+![](CardDesign.png)
 
 ### Video Page
 ![](VideoPage.png)
@@ -163,7 +171,43 @@ Response:
 
 ---
 
-## Nice-to-haves 
+### Roadmap
+
+- Create client
+   - react project with routes 
+   - install all the necessary libraries
+
+- Create server
+  - express project with routing, with placeholder 200 responses
+
+- Create endpoints for qoutes
+
+- Create endpoints to implement twilio video jwt token
+
+- Feature: HomePage
+  - list of 'supportee's mood'/template
+  - Create a GET request for quotes that is tailored for each mood
+
+- Feature: TemplateDetails page
+  - implement view template/mood page
+  - implement brief advantage of each support
+
+- Feature: Curate-Template page
+  - implement a template page where images,music & qoute can be added to form
+  - Create a GET /qoutes/stress or any mood dierectory
+
+- Feature: Card Page
+  - implement the final card design page 
+  - install jspdf library
+  - implement a download pdf button
+
+- Feature: Video Page
+  - implement a video call page 
+  - Create a GET /token
+  - implement make/answer video call buttons
+  
+
+## Future Implementations 
 - Add anonymous sharing feature.  
 - Introduce gamification with badges and rewards.  
 - Expand quote categories and support for multiple languages.  
