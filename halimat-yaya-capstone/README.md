@@ -1,178 +1,171 @@
-# Project Title
-
-## Overview
-
-Arewa in Yoruba Language means (Beauty), Arewa is a E-commerce web-app for users to find beauty products that suits their needs.
-### Problem Space
+### Project Title:  
+InspireShare
 
 
-Beauty means different things to different people. However, as a woman, I can say that being called beautiful is something many of us hold dear. In today’s world, we often hear about the struggle to find the perfect beauty products that truly meet our needs. This is why *Arewa* was created.  
+### OverVview
 
-Many users spend endless hours searching websites that don’t prioritize their preferences or needs, often ending up frustrated by a complicated shopping experience. *Arewa* aims to change that by offering a simple, user-friendly solution that understands and caters to individual beauty needs, making the search for the perfect product effortless and enjoyable.  
+InspireShare is an app designed to spread love and positivity by helping users create personalized cards filled with inspirational quotes, music, and images to support friends and loved ones during tough times.  
+
+### Problem Difficulty Expressing Support and Encouragement  
+People often struggle to find the right words or meaningful ways to comfort and support friends or loved ones going through tough times. This can lead to feelings of HELPLESNESS or MISSED opportunities to show care and compassion.  
+
+### Key Pain Points:  
+1. Lack of Inspiration: Difficulty finding thoughtful, uplifting quotes or words to share.  
+2. Time-Consuming: Crafting personalized messages, finding relevant media, and sharing them can feel overwhelming.  
+3. Emotional Connection: Generic messages fail to convey the depth of care or understanding desired during emotional moments.  
+
+The app solves this by making it easy to create personalized, meaningful, and shareable expressions of encouragement, combining words, visuals, and music to uplift others effortlessly.It also gives users the option to make a video call to anyone they want to support or encourage.
 
 
-### User Profile
 
-- Beauty Divas:
-  - looking for beauty products that suits their needs
-  - Get recommendations based on my preferences
-  - Read product reviews and ratings with visuals from previous customers
-  - Easy cart management and checkout gateway
-  - 
-### Features
+# ## Usage  
+1. Create a Card: Choose a quote, add a personal music link, and upload a photo or image.  
+2. Add Music: Search and attach a Spotify or YouTube link to the card for an emotional touch.  
+3. Share: Send the card directly to a friend via email, messaging apps, or social media. 
+4. video Call: A video call might be a better option for some users. 
 
-List the functionality that your app will include. These can be written as user stories or descriptions with related details. Do not describe _how_ these features are implemented, only _what_ needs to be implemented.
 
-## Implementation
+## Features 
+
+- As a user, i want to be able to select quotes without wasting time browisng the internet.
+- As s user i don't have to master design tools before i can make a beautify lovely card design.
+
+- As a user i don't want to share music, images, and qoutes separately (it's time consuming)
+- As a user i want to be able to download the card without any hassle
+- As a user i want to be to make a video call when i don't really have much time to curate a card.
+
+
+- Inspirational Quote Library: select random quotes categorized by themes such as resilience, hope, and positivity.  
+- Customizable Cards: Add personal touches with images, music links, and customized messages.  
+- Music Integration: Include meaningful music via Spotify or YouTube links.  
+- Shareable Creations: Send cards directly to friends or share them on social platforms.   
+- Daily Inspiration: Receive daily quotes to keep your positivity flowing OR leaderboard, streaks(oh what a great person you are you sent 5 support cards this week).  
+
+---
+
+## Implementation 
 
 ### Tech Stack
 
 - React
 - JavaScript
-- MySQL
 - Express
-- Client libraries: 
+- MySql
+
+
+- Client Libraries:
     - react
     - react-router
     - axios
-    - react-redux
-    - stripe
-- Server libraries:
-    - knex
-    - express
-    - cors
-    - dotenv
-    - stripe
-    - bcrypt for password hashing
+    - Twilio
 
+- Server Libraries:
+    - express
+    - knex
+    - Twilio
+
+
+---
 ### APIs
 
-No external APIs will be used i will create my API
+- No external APIs will be used i will develop my own API
+
+---
 
 ### Sitemap
-
-![](Site-map.png)
-
-- Home page
-- Search
-- Quiz
-- Lists of Products
-- Ask a question
-- Product Details/Reviews
-- Add to Cart
-- Checkout
-- SignUp
-- SignIn
+- Register/LogIn
+- Homepage
+- choose the "supportee's mood
+- Template
+- Card/Download
 
 ### Mockups
 
 ### Home Page
-![](Home-Page.png)
+![](HomePage-insp.png)
 
-### Quiz Page
-![](Quiz-Page.png)
+### TemplateDetails Page
+![](TemplatesDetails.png)
 
-### Product Details Page
-![](Product-details.png)
+### Curate Template Page
+![](Curate-Template.png)
 
-### checkout page
-![](checkout-page.png)
-
-### SignUp page
-![](SignUp.png)
-
-### SignIn Page
-![](SignIn.png)
+### Video Page
+![](VideoPage.png)
 
 
-### Data
 
-Describe your data and the relationships between the data points. You can show this visually using diagrams, or write it out. 
-
-### Endpoints
-
-**GET / bestSellers**
-
-Response:
-```
-[
-    {
-        "id": 1,
-        "name": "Lips high shimmer",
-        "image": "/image",
-        "price": "$50",
-        "rating": 4.5,
-        "description": "bold lips",
-        "details": "Warning: Intense Hydration Ahead. Lasting Glow. GlowBoost Vitamin C Serum with Hyaluronic Acid and Antioxidants delivers a powerful burst of hydration and radiance instantly and over time. This glow-enhancing serum is available in 5 radiant variants, like Sunlit Glow, Brightening Boost, Dewy Dream, Golden Radiance, and Fresh Awakening. Prepare for visibly brighter, smoother, and more luminous skin every day.",
-        "slug": "model-one-image"
-    },
-    ...
-]
-```
-**GET / bestSellers/:id**
-
- Get bestSellers by id, users can read product reviews even if the user is logged in or not
-
-
-Response:
-```
-[
-    {
-        "id": "3r7q32sd4d8821g3442",
-        "name": "Lips high shimmer",
-        "image": "/image",
-        "price": "$50",
-        "rating": 4.5,
-        "description": "bold lips",
-        "details": "Warning: Intense Hydration Ahead. Lasting Glow. GlowBoost Vitamin C Serum with Hyaluronic Acid and Antioxidants delivers a powerful burst of hydration and radiance instantly and over time. This glow-enhancing serum is available in 5 radiant variants, like Sunlit Glow, Brightening Boost, Dewy Dream, Golden Radiance, and Fresh Awakening. Prepare for visibly brighter, smoother, and more luminous skin every day.",
-        "slug": "model-one-image",
-
-        "reviews":[
-          {
-            "id": "34a7sd93k248s8f212752",
-            "reviewerName": "Jane Doe",
-            "ratings": "4",
-            "title": "Great Product",
-            "reviewText": "I’m obsessed! The color match is spot on, and it gives me such a natural glow.",
-            "image": "/image",
-            "timestamp": 123456789046865
-          }
-          {
-            "id": "84a7sd33k148s8f215192",
-            "reviewerName": "Jackie wolf",
-            "ratings": "4.5",
-            "title": "I love it",
-            "reviewText": "This product is incredible! The coverage is flawless, and it feels so lightweight on my skin",
-            "timestamp": 123456789046865
-          }
-        ]
-    },
-    ...
-]
-```
-
-**POST / bestSellers/:id/rating**
-
-- Logged in user can add their rating of a product
-
-```
-[
-    {
-        "id": "84a7sd33k148s8f215192",
-        "reviewerName": "Jackie wolf",
-        "ratings": "4",
-        "title": "I love it",
-        "reviewText": "This product is incredible! The coverage is flawless, and it feels so lightweight on my skin",
-        "timestamp": 123456789046865
-    },
-    ...
-]
-## Roadmap
-
-Scope your project as a sprint. Break down the tasks that will need to be completed and map out timeframes for implementation working back from the capstone due date. 
+## Data 
 
 ---
 
-## Future Implementations
-Your project will be marked based on what you committed to in the above document. Here, you can list any additional features you may complete after the MVP of your application is built, or if you have extra time before the Capstone due date.
+### Endpoints
 
+
+
+**GET /Qoutes/stress**
+
+Response:
+````
+[
+  {
+    "id": 1,
+    "title": "To the Brave You",
+    "message":""To the Brave You: Even when the path feels impossible, remember that your heart has already overcome so much. The courage you carry inside is stronger than any fear. Keep going, because your bravery will light the way, even in the darkest moments.""
+  },
+]
+
+````
+**GET /Qoutes/relationship**
+
+Response:
+````
+[
+  {
+    "id": 1,
+    "title": "Be happy",
+    "message":"Heartbreak doesn’t mean you’ve failed, it just means you gave your heart to someone who wasn’t ready for it. It’ll hurt, but you’ll learn to love yourself even more through this."
+  },
+]
+
+````
+**GET /Qoutes/depression**
+
+Response:
+````
+[
+  {
+    "id": 1,
+    "title": "Be happy",
+    "message":"Heartbreak doesn’t mean you’ve failed, it just means you gave your heart to someone who wasn’t ready for it. It’ll hurt, but you’ll learn to love yourself even more through this."
+  },
+]
+
+````
+
+**GET /token**
+
+  - backend token request set up for client side
+  {
+  "token": "eyJhbGciOiJ-SAMPLE-YmKdvciQST2VfjiUz4-M3Wl-T0kOg==",
+  "identity": "foo@company.com",
+  "room": "room_name",
+  "type": "video"
+}
+
+
+  - Response for client side
+  [
+    {
+      "token": "SAMPLE_twilio_jwt_token_here"
+    }
+  ]
+
+---
+
+## Nice-to-haves 
+- Add anonymous sharing feature.  
+- Introduce gamification with badges and rewards.  
+- Expand quote categories and support for multiple languages.  
+- Implement AI suggestions for quotes and card designs.  
+---
