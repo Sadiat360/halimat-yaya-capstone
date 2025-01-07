@@ -52,8 +52,8 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 - Inspirational Quote Library: select random quotes categorized by themes such as resilience, hope, and positivity.  
 - Customizable Cards: Add personal touches with images, music links, and customized messages.  
 - Music Integration: Include meaningful music via Spotify or YouTube links.  
-- Shareable Creations: Send cards directly to friends or share them on social platforms.   
-- Daily Inspiration: Receive daily quotes to keep your positivity flowing OR leaderboard, streaks(oh what a great person you are you sent 5 support cards this week).  
+- Shareable Creations: Send cards directly to friends or share them on social platforms by downloading card as pdf.   
+
 
 ---
 
