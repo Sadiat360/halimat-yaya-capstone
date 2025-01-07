@@ -36,7 +36,7 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 1. Create a Card: Choose a quote, add a personal music link, and upload a photo or image.  
 2. Add Music: Search and attach a Spotify or YouTube link to the card for an emotional touch.  
 3. Share: Send the card directly to a friend via email, messaging apps, or social media. 
-4. video Call: A video call might be a better option for some users. 
+
 
 
 ## Features 
@@ -96,7 +96,7 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 - choose the "supportee's mood/template
 - TemplateDetails
 - Card/Download
-- Video Call
+
 
 ### Mockups
 
@@ -118,8 +118,6 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 ### Card design Page
 ![](mockups/CardDesign.png)
 
-### Video Page
-![](mockups/VideoPage.png)
 
 
 
@@ -178,7 +176,7 @@ Response:
   "token": "eyJhbGciOiJ-SAMPLE-YmKdvciQST2VfjiUz4-M3Wl-T0kOg==",
   "identity": "foo@company.com",
   "room": "room_name",
-  "type": "video"
+  "type": "signUp"
 }
 
 
@@ -261,10 +259,7 @@ Response:
   - install jspdf library
   - implement a download pdf button
 
-- Feature: Video Page
-  - implement a video call page 
-  - Create a GET /token
-  - implement make/answer video call buttons
+
   
 
 ## Future Implementations 
@@ -272,4 +267,4 @@ Response:
 - Introduce gamification with badges and rewards.  
 - Expand quote categories and support for multiple languages.  
 - Implement AI suggestions for quotes and card designs.  
----
+--- video Call: A video call might be a better option for some users. 
