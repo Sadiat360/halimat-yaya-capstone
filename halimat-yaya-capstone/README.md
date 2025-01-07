@@ -1,15 +1,15 @@
 ## Table of Contents
-#Overview
 - [Problem Statement](#problem-statement)
 - [Overview](#overview)
-- [Key Pain Points](#installation)
+- [Key Pain Points](#key-pain-points)
 - [Usage](#usage)
 - [Features](#features)
 - [Implementation](#implementation)
-- [Tech Stack](#techstack)
-- [APIs](#api)
+- [Tech Stack](#tech-stack)
+- [APIs](#apis)
 - [Sitemap](#sitemap)
 - [Mockups](#mockups)
+
 
 
 ### Project Title:  
@@ -20,8 +20,8 @@ InspireShare
 
 InspireShare is an app designed to spread love and positivity by helping users create personalized cards filled with inspirational quotes, music, and images to support friends and loved ones during tough times.  
 
-### Problem Difficulty Expressing Support and Encouragement  
-People often struggle to find the right words or meaningful ways to comfort and support friends or loved ones going through tough times. This can lead to feelings of HELPLESNESS or MISSED opportunities to show care and compassion.  
+### Problem Statement 
+Difficulty Expressing Support and Encouragement---People often struggle to find the right words or meaningful ways to comfort and support friends or loved ones going through tough times. This can lead to feelings of HELPLESNESS or MISSED opportunities to show care and compassion.  
 
 ### Key Pain Points:  
 1. Lack of Inspiration: Difficulty finding thoughtful, uplifting quotes or words to share.  
