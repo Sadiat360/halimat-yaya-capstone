@@ -16,7 +16,7 @@
 InspireShare
 
 
-### OverVview
+### Overview
 
 InspireShare is an app designed to spread love and positivity by helping users create personalized cards filled with inspirational quotes, music, and images to support friends and loved ones during tough times.  
 
@@ -32,7 +32,7 @@ The app solves this by making it easy to create personalized, meaningful, and sh
 
 
 
-# ## Usage  
+### Usage  
 1. Create a Card: Choose a quote, add a personal music link, and upload a photo or image.  
 2. Add Music: Search and attach a Spotify or YouTube link to the card for an emotional touch.  
 3. Share: Send the card directly to a friend via email, messaging apps, or social media. 
